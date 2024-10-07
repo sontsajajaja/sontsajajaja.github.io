@@ -1,0 +1,309 @@
+/* Yleiset tyylit */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    /* Oletusväri */
+}
+
+/* Otsikkotyylit */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    /* tai 48px */
+    font-weight: bold;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    /* tai 30px */
+    font-weight: bold;
+    color: #000000;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    /* tai 24px */
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Pääteksti */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    /* tai 18px */
+    color: #000000;
+}
+
+/* Alateksti */
+.subtext {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    /* tai 16px */
+    color: #000000;
+}
+
+/* Painikkeet */
+.button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    /* tai 16px */
+    color: #000000;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Lisätiedot */
+.additional-info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    /* tai 14px */
+    color: #333333;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+/* Headerin tyyli: */
+header {
+    height: 50vh;
+    width: 100%;
+    background-image: url("nosies1.jpg");
+    background-size: cover;
+    background-position: center center;
+
+}
+
+/* Navigaatiopalkin tyyli: */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7A8B65;
+    padding: 15px;
+    gap: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigointipainikkeen tyyli: */
+.nav-button {
+    background-color: #7A8B65;
+    color: #000000;
+    font-size: 18px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 50px;
+    width: 150px;
+    text-align: center;
+    /* Osoittimen tyyli muuttuu "pointeriksi" (osoitin, joka näkyy painikkeen päällä). */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover-tila: Kun hiiri on painikkeen päällä */
+.nav-button:hover {
+    background-color: #8A9A5B;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Active-tila: Kun painiketta painetaan */
+.nav-button:active {
+    background-color: #556B2F;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Painike "painuu" hieman alas (2px) simuloimaan painallusta. */
+    transform: translateY(2px);
+}
+
+/* Container-luokka, joka sijoittaa elementit inline-block tyyliin, mahdollistaen kuvien ja muiden elementtien joustavan sijoittelun */
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Containerin sisällä olevien kuvien tyyli */
+.container img {
+    display: block;
+}
+
+/* Logo-elementin tyyli */
+.logo {
+    background-color: #7A8B65;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    /* Siirtymäefekti väreille ja varjolle hover- ja active-tiloissa. */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+/* Logon sisäisen h1-otsikon tyyli */
+.logo h1 {
+    /* Poistetaan marginaalit ja paddingit, jotta otsikko ei aiheuta ylimääräistä tyhjää tilaa logossa. */
+    margin: 0;
+    padding: 0;
+}
+
+/* Hover-tila: kun hiiri on logon päällä */
+.logo:hover {
+    background-color: #8A9A5B;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Active-tila: kun logoa klikataan */
+.logo:active {
+    background-color: #556B2F;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+/* Flexbox container, joka asettaa elementit joustavasti */
+.flex_container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 20px;
+}
+
+/* Yksittäinen flexbox-elementti */
+.flex_item {
+    margin-right: 20px;
+    flex: 1;
+    max-width: 900px;
+}
+
+/* Oikealle sijoitettu flexbox-elementti */
+.flex_item_right {
+    align-self: flex-start;
+    background-color: #7A8B65;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    padding: 20px;
+    margin-left: auto;
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    /* Estää elementin sisällön ylivuodon. */
+    overflow: hidden;
+}
+
+/* Palautelaatikon tyyli */
+.feedback_box {
+    background-color: #7A8B65;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+    /* Absoluuttinen sijainti, joka asettaa laatikon kontainerin alaosaan. */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid black;
+    /* Sisällön laatikointi: sisennykset ja marginaalit otetaan huomioon elementin koossa. */
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+/* Palautelaatikon linkit */
+.feedback_box a {
+    color: #000000;
+    background-color: #7A8B65;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Siirtymäefekti väreille ja varjolle hover- ja active-tiloissa. */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Hover-tila: kun hiiri on linkin päällä */
+.feedback_box a:hover {
+    color: #000000;
+    background-color: #7A8B65;
+    text-decoration: underline;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Active-tila: kun linkkiä klikataan */
+.feedback_box a:active {
+    background-color: #556B2F;
+    color: rgb(0, 0, 0);
+    /* Linkki siirtyy hieman alas (2px), kun sitä klikataan. */
+    transform: translateY(2px);
+}
+
+/* Footer-tausta ja yleiset asetukset */
+.footer {
+    background-color: #333;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+/* Sosiaalisen median kuvakkeiden asettelu */
+.social-icons {
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+/* Kuvakkeiden perusasetus */
+.social-icons a {
+    font-size: 40px;
+    /* Kuvakkeen koko */
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+/* Hover-tila: kuvake suurenee kun hiiri on sen päällä */
+.social-icons a:hover {
+    transform: scale(1.2);
+    /* Kasvata kuvaketta hover-tilassa */
+}
+
+/* Sähköposti ja copyright-teksti */
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Sähköpostin ja copyright-tekstin tyyli */
+.email, .copyright {
+    margin: 0 25px;
+    text-align: center;
+}

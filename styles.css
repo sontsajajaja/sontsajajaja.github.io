@@ -1,0 +1,499 @@
+/* Yleiset tyylit */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    /* Oletusväri */
+}
+
+/* Otsikkotyylit */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    /* min. 36px max. 48px */
+    font-weight: bold;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    /* min. 24px max. 30px */
+    font-weight: bold;
+    color: #000000;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    /* min. 18px max. 24px */
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Pääteksti */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    /* min. 16px max. 18px */
+    color: #000000;
+}
+
+/* Alateksti */
+.subtext {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    /* min. 14px max. 16px */
+    color: #000000;
+}
+
+/* Painikkeet */
+.button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    /* tai 16px */
+    color: #000000;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Lisätiedot */
+.additional-info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    /* tai 14px */
+    color: #333333;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+/* Headerin tyyli: */
+header {
+    height: 50vh;
+    width: 100%;
+    background-image: url("pari1.jpg");
+    background-size: cover;
+    background-position: center center;
+
+}
+
+/* Navigaatiopalkin tyyli: */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7A8B65;
+    padding: 15px;
+    gap: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigointipainikkeen tyyli: */
+.nav-button {
+    background-color: #7A8B65;
+    color: #000000;
+    font-size: 18px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 50px;
+    width: 150px;
+    text-align: center;
+    /* Osoittimen tyyli muuttuu "pointeriksi" (osoitin, joka näkyy painikkeen päällä) */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*Active tila: Kun sivu on käytössä */
+.nav-button.active {
+    background-color: #9db885;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Active-tila: Kun painiketta painetaan */
+.nav-button:active {
+    background-color: #8D9D5C;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Painike "painuu" hieman alas (2px) simuloimaan painallusta */
+    transform: translateY(2px);
+}
+
+/* Hover-tila: Kun hiiri on painikkeen päällä */
+.nav-button:hover {
+    background-color: #8D9D5C;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo-elementin tyyli */
+.logo {
+    background-color: #7A8B65;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    /* Siirtymäefekti väreille ja varjolle hover- ja active-tiloissa */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+/* Logon sisäisen h2-otsikon tyyli */
+.logo h2 {
+    /* Poistetaan marginaalit ja paddingit, jotta otsikko ei aiheuta ylimääräistä tyhjää tilaa logossa */
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+/* Hover-tila: kun hiiri on logon päällä */
+.logo:hover {
+    background-color: #8D9D5C;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Active-tila: kun logoa klikataan */
+.logo:active {
+    background-color: #8D9D5C;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+/* Flexbox container, joka asettaa elementit joustavasti index sivulla */
+.flex_container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 20px;
+}
+
+/* Yksittäinen flexbox-elementti (index) */
+.flex_item {
+    flex: 1;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+/* Oikealle sijoitettu flexbox-elementti (index) */
+.flex_item_right {
+    align-self: flex-start;
+    background-color: #7A8B65;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    padding: 20px;
+    margin-left: auto;
+    border-radius: 10px;
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Palautteen napin tyyli */
+.feedback-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    background-color: #7A8B65;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Palautteen linkki */
+.feedback-button a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3;
+}
+
+/* Hover-tila palautteen napille */
+.feedback-button:hover {
+    background-color: #8D9D5C;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Active-tila palautteen napille */
+.feedback-button:active {
+    background-color: #8D9D5C;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+/* Intro-osio: sisältää otsikon ja kappaletekstin */
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Otsikon tyyli */
+.intro-section h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+/* Kappaletekstin tyyli */
+.intro-section p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 800px; 
+    text-align: center;
+}
+
+/* Kuvagalleria/Flexbox */
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 40px;
+    margin: 30px;
+}
+
+/* Kuvaa ympäröivä kontti */
+.image-container {
+    border: 2px solid black;
+    border-radius: 3px;
+    gap: 60px;
+    padding: 0px;
+    text-align: center;
+    width: calc(40% - 20px);
+}
+
+/* Kuvat */
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1px;
+}
+
+/* Kuvateksti */
+.caption {
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+/* Yhteystiedot sivun asetukset */
+.contacts-section {
+    max-width: 800px;
+    margin: 5px auto;
+    padding: 5px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Yhteystietojen tausta */
+.contacts-box {
+    background-color: #7A8B65;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 10px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Otsikoiden asetukset */
+.contacts-section h3 {
+    font-size: 24px;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Kappaleiden tyyli */
+.contacts-section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Linkkien tyyli */
+.contacts-section a {
+    color: #001374;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover-tila linkeille */
+.contacts-section a:hover {
+    color: #00115C;
+}
+
+/* Puhelin- ja sähköpostitietojen tyyli */
+.contacts-section p a {
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* UKK- ja palautetekstien korostus */
+.contacts-section h3 a {
+    color: #000000;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+/* Footer-tausta ja yleiset asetukset */
+.footer {
+    background-color: #333;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+/* Sosiaalisen median kuvakkeiden asettelu */
+.social-icons {
+    display: flex;
+    gap: 2px;
+    margin-left: 5px;
+}
+
+/* Sosiaalisen median kuvakkeiden perusasetus */
+.social-icons a {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    padding: 5px;
+}
+
+/* Hover-tila: kuvakkeelle */
+.social-icons a:hover {
+    background-color: #8D9D5C;
+    color: black;
+    border-color: rgb(0, 0, 0);
+}
+
+
+/* Sähköposti ja copyright-teksti */
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Sähköpostin ja copyright-tekstin tyyli */
+.email,
+.copyright {
+    margin: 0 25px;
+    text-align: center;
+}
+
+/* Sähköpostilinkille */
+.email a {
+    color: white;
+    margin: 0px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3;
+}
+
+/* Hover-tila sähköpostilinkille */
+.email a:hover {
+    background-color: #8D9D5C;
+    color: black;
+    border-color: rgb(0, 0, 0);
+}
+
+/* Active-tila: Kun painiketta painetaan */
+.email a:active {
+    background-color: #8D9D5C;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Painike "painuu" hieman alas (2px) simuloimaan painallusta */
+    transform: translateY(2px);
+}
+
+/* Copyright-teksti */
+.copyright {
+    color: white;
+    font-size: 14px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+
+/* Footerin sosiaalisten kuvakkeiden asettelu */
+.social-icons {
+    margin-right: aut;
+}
+
+/* Footerin napit */
+.footer-button {
+    background-color: #7A8B65;
+    color: #000000;
+    font-size: 18px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    /* Osoittimen tyyli muuttuu "pointeriksi" (osoitin, joka näkyy painikkeen päällä) */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover-tila: kun hiiri on painikkeen päällä */
+.footer-button:hover {
+    background-color: #8D9D5C;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Active-tila: kun painiketta painetaan */
+.footer-button:active {
+    background-color: #8D9D5C;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Painike "painuu" hieman alas (2px) simuloimaan painallusta */
+    transform: translateY(2px);
+}
