@@ -95,7 +95,7 @@ header {
     margin: 0 50px;
     width: 150px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none !important;
     display: inline-block;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
