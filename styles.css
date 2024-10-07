@@ -95,11 +95,17 @@ header {
     margin: 0 50px;
     width: 150px;
     text-align: center;
-    text-decoration: none !important;
+    text-decoration: none
     display: inline-block;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigointipainikkeen linkin tyyli */
+.nav-button a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Active-tila: Kun sivu on käytössä */
