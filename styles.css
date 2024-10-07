@@ -84,6 +84,17 @@ header {
 
 }
 
+/* Navigaatiopalkin tyyli: */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7A8B65;
+    padding: 15px;
+    gap: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Navigointipainikkeen tyyli */
 .nav-button {
     background-color: #7A8B65;
