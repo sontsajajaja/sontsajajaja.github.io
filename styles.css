@@ -249,7 +249,7 @@ header {
     width: 100%;
     height: 100%;
     padding: 0;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
 }
 
 /* Hover-tila palautteen napille */
@@ -442,7 +442,7 @@ header {
     padding: 5px 10px;
     border: 2px solid transparent;
     display: inline-block;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
 }
 
 /* Hover-tila sähköpostilinkille */
@@ -471,7 +471,7 @@ header {
 
 /* Footerin sosiaalisten kuvakkeiden asettelu */
 .social-icons {
-    margin-right: aut;
+    margin-right: auto;
 }
 
 /* Footerin napit */
